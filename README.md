@@ -15,16 +15,11 @@
 ### 当前已实现 / Currently Implemented
 
 - **烘干末影珍珠（Baked Ender Pearl）** — 可投掷物品：
-  - 通过 **熔炉 / 烟熏炉 / Create 智能烟熏（mechanical smoking）** 将普通末影珍珠加工而成；
-  - 投掷命中方块时 **有 50% 概率生成一只末影螨**，随后消失（暂不传送玩家）；
-  - 配合 Create 的漏斗、传送带等可实现全自动批量加工。
+
 - **幽匿胶体（Sculk Colloid）** — 一种浓稠、流速缓慢的流体：
-  - 高密度 / 高粘稠度（`density 3000 / viscosity 3000`），流动缓慢，适合作为「浓稠幽匿精华」的表现；
-  - 支持通用流体桶、Create 管道 / 泵 / 储罐等流体自动化（基于 `FluidStack` / `IFluidHandler`）；
-  - 自带逐帧流动动画纹理。
+
 - **末影胶体（Ender Colloid）** — 幽匿胶体的末影变体：
-  - 结构与幽匿胶体一致，动画节奏更快的流动纹理；
-  - 与幽匿胶体共同构成「幽匿 — 末影」双胶体体系，为后续合成链预留接口。
+
 - **自定义创造标签页（Create Scuder）** — 收纳本模组全部物品。
 - **双语文本（简体中文 / English）** — 数据生成驱动的语言文件。
 
@@ -45,34 +40,11 @@
 | Create Dragons Plus | ≥ 1.0.0 | 必选 |
 | JEI | 可选 | 配方查看 |
 
-## ⚙️ 构建 / Building
 
-```bash
-# 构建模组 JAR
-./gradlew build            # 产物: build/libs/createscuder-1.0.0.jar
-
-# 运行客户端 / 服务器
-./gradlew runClient
-./gradlew runServer
-
-# 数据生成（语言文件等 → src/generated/resources/）
-./gradlew runData
-
-# 运行游戏测试
-./gradlew runGameTestServer
-
-# 刷新依赖 / 重置构建
-./gradlew --refresh-dependencies
-./gradlew clean
-```
 
 环境要求：**JDK 21**。版本信息集中在 `gradle.properties`。
 
-## 🗂 技术概览 / Technical Overview
 
-- **架构**：NeoForge `DeferredRegister` 系统；客户端逻辑隔离在 `*Client` 类；流体基于 `BaseFlowingFluid` + `FluidType` + `LiquidBlock` + `BucketItem` 标准管线。
-- **数据生成**：语言文件由 `LanguageProvider` 生成到 `src/generated/resources/`。
-- **翻译**：简体中文（`zh_cn`）与英文（`en_us`）双语言。
 
 ## 📄 License / 许可证
 
