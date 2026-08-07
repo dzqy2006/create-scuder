@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0":"createscuder:item/sculk_colloid_bucket"
+  }
+}

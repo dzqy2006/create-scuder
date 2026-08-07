@@ -139,24 +139,19 @@ dependencies {
     // Create Dragons Plus
     implementation "curse.maven:create-dragons-plus-${create_dragons_plus_project_id}:${create_dragons_plus_file_id}"
 
+    compileOnly "curse.maven:jei-${jei_project_id}:${jei_file_id}"
+    runtimeOnly "curse.maven:jei-${jei_project_id}:${jei_file_id}"
+ //   compileOnly "curse.maven:iris-${iris_shader_project_id}:${iris_shader_file_id}"
+ //   runtimeOnly "curse.maven:iris-${iris_shader_project_id}:${iris_shader_file_id}"
+    compileOnly "curse.maven:accelerated-rendering-${ARd_project_id}:${ARd_file_id}"
+    runtimeOnly "curse.maven:accelerated-rendering-${ARd_project_id}:${ARd_file_id}"
+    compileOnly "curse.maven:accelerated-recoiling-${ARc_project_id}:${ARc_file_id}"
+    runtimeOnly "curse.maven:accelerated-recoiling-${ARc_project_id}:${ARc_file_id}"
+    compileOnly "curse.maven:sodium-${sodium_project_id}:${sodium_file_id}"
+    runtimeOnly "curse.maven:sodium-${sodium_project_id}:${sodium_file_id}"
+ //   compileOnly "curse.maven:iris-flywheel-compat-${I_A_O_F_compat_project_id}:${I_A_O_F_compat_file_id}"
+ //   runtimeOnly "curse.maven:iris-flywheel-compat-${I_A_O_F_compat_project_id}:${I_A_O_F_compat_file_id}"
 
-    // Example optional mod dependency with JEI
-    // The JEI API is declared for compile time use, while the full JEI artifact is used at runtime
-    // compileOnly "mezz.jei:jei-${mc_version}-common-api:${jei_version}"
-    // compileOnly "mezz.jei:jei-${mc_version}-neoforge-api:${jei_version}"
-    // We add the full version to localRuntime, not runtimeOnly, so that we do not publish a dependency on it
-    // localRuntime "mezz.jei:jei-${mc_version}-neoforge:${jei_version}"
-
-    // Example mod dependency using a mod jar from ./libs with a flat dir repository
-    // This maps to ./libs/coolmod-${mc_version}-${coolmod_version}.jar
-    // The group id is ignored when searching -- in this case, it is "blank"
-    // implementation "blank:coolmod-${mc_version}:${coolmod_version}"
-
-    // Example mod dependency using a file as dependency
-    // implementation files("libs/coolmod-${mc_version}-${coolmod_version}.jar")
-
-    // Example project dependency using a sister or child project:
-    // implementation project(":myproject")
 
     // For more info:
     // http://www.gradle.org/docs/current/userguide/artifact_dependencies_tutorial.html
