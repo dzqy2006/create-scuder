@@ -1,0 +1,10 @@
+{
+  "block.createscuder.ender_colloid": "Ender Colloid",
+  "block.createscuder.sculk_colloid": "Sculk Dragon Breath",
+  "fluid.createscuder.ender_colloid": "Ender Colloid",
+  "fluid.createscuder.sculk_colloid": "Sculk Colloid Bucket",
+  "item.createscuder.baked_ender_pearl": "Baked Ender Pearl",
+  "item.createscuder.ender_colloid_bucket": "Ender Colloid Bucket",
+  "item.createscuder.sculk_colloid_bucket": "Sculk Dragon Breath Bucket",
+  "itemGroup.createscuder": "Create scuder"
+}
