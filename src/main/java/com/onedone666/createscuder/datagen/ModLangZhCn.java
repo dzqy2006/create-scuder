@@ -20,7 +20,8 @@ public class ModLangZhCn extends LanguageProvider {
         add("fluid.createscuder.ender_colloid", "末影胶体");
         add(ModItems.ENDER_COLLOID_BUCKET.get(), "末影胶体桶");
         add(ModBlocks.ENDER_COLLOID.get(), "末影胶体");
-
+        add(ModItems.ENDER_EGG.get(),"末影之卵");
+        add(ModItems.BLOODY_ENDER_PEARL.get(),"血腥珍珠");
 
     }
 }

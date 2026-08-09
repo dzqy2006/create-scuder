@@ -20,6 +20,8 @@ public class ModLangEnUs extends LanguageProvider {
         add("fluid.createscuder.ender_colloid", "Ender Colloid");
         add(ModItems.ENDER_COLLOID_BUCKET.get(), "Ender Colloid Bucket");
         add(ModBlocks.ENDER_COLLOID.get(), "Ender Colloid");
+        add(ModItems.BLOODY_ENDER_PEARL.get(),"Bloody Ender Pearl");
+        add(ModItems.ENDER_EGG.get(),"Ender Egg");
 
     }
 }

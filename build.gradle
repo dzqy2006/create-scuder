@@ -138,6 +138,7 @@ dependencies {
 
     // Create Dragons Plus
     implementation "curse.maven:create-dragons-plus-${create_dragons_plus_project_id}:${create_dragons_plus_file_id}"
+    implementation "curse.maven:curios-api-${curios_api_project_id}:${curios_api_file_id}"
 
     compileOnly "curse.maven:jei-${jei_project_id}:${jei_file_id}"
     runtimeOnly "curse.maven:jei-${jei_project_id}:${jei_file_id}"
@@ -149,6 +150,11 @@ dependencies {
     runtimeOnly "curse.maven:accelerated-recoiling-${ARc_project_id}:${ARc_file_id}"
     compileOnly "curse.maven:sodium-${sodium_project_id}:${sodium_file_id}"
     runtimeOnly "curse.maven:sodium-${sodium_project_id}:${sodium_file_id}"
+    compileOnly "curse.maven:jade-${jade_project_id}:${jade_file_id}"
+    runtimeOnly "curse.maven:jade-${jade_project_id}:${jade_file_id}"
+    compileOnly "curse.maven:jade-addons-${jade_addons_project_id}:${jade_addons_file_id}"
+    runtimeOnly "curse.maven:jade-addons-${jade_addons_project_id}:${jade_addons_file_id}"
+
  //   compileOnly "curse.maven:iris-flywheel-compat-${I_A_O_F_compat_project_id}:${I_A_O_F_compat_file_id}"
  //   runtimeOnly "curse.maven:iris-flywheel-compat-${I_A_O_F_compat_project_id}:${I_A_O_F_compat_file_id}"
 

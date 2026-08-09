@@ -14,6 +14,6 @@ public class ModBlocks {
                     BlockBehaviour.Properties.of().liquid().noCollission().strength(100.0f).noLootTable()));
     public static final DeferredBlock<LiquidBlock> ENDER_COLLOID =
             BLOCKS.register("ender_colloid", () -> new LiquidBlock(
-                    ModFluids.SCULK_COLLOID_SOURCE.get(),
+                    ModFluids.ENDER_COLLOID_SOURCE.get(),
                     BlockBehaviour.Properties.of().liquid().noCollission().strength(100.0f).noLootTable()));
 }

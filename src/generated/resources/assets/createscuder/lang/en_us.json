@@ -4,7 +4,9 @@
   "fluid.createscuder.ender_colloid": "Ender Colloid",
   "fluid.createscuder.sculk_colloid": "Sculk Colloid Bucket",
   "item.createscuder.baked_ender_pearl": "Baked Ender Pearl",
+  "item.createscuder.bloody_ender_pearl": "Bloody Ender Pearl",
   "item.createscuder.ender_colloid_bucket": "Ender Colloid Bucket",
+  "item.createscuder.ender_egg": "Ender Egg",
   "item.createscuder.sculk_colloid_bucket": "Sculk Dragon Breath Bucket",
   "itemGroup.createscuder": "Create scuder"
 }

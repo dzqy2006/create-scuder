@@ -4,7 +4,9 @@
   "fluid.createscuder.ender_colloid": "末影胶体",
   "fluid.createscuder.sculk_colloid": "幽匿胶体",
   "item.createscuder.baked_ender_pearl": "烘干末影珍珠",
+  "item.createscuder.bloody_ender_pearl": "血腥珍珠",
   "item.createscuder.ender_colloid_bucket": "末影胶体桶",
+  "item.createscuder.ender_egg": "末影之卵",
   "item.createscuder.sculk_colloid_bucket": "幽匿胶体桶",
   "itemGroup.createscuder": "机械动力：幽末"
 }

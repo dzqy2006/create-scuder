@@ -22,14 +22,10 @@ import static com.onedone666.createscuder.ModItems.ITEMS;
 @Mod(Createscuder.MODID)
 public class Createscuder {
 
+
     public static final String MODID = "createscuder";
-
     public static final Logger LOGGER = LogUtils.getLogger();
-
     public static final DeferredRegister<CreativeModeTab> CREATIVE_MODE_TABS = DeferredRegister.create(Registries.CREATIVE_MODE_TAB, MODID);
-
-
-
 
 
     public static final DeferredHolder<CreativeModeTab, CreativeModeTab> CREATE_SCUDER_CREATE_TAB =
@@ -41,30 +37,19 @@ public class Createscuder {
                 output.accept(ModItems.BAKED_ENDER_PEARL.get());
                 output.accept(ModItems.SCULK_COLLOID_BUCKET.get());
                 output.accept(ModItems.ENDER_COLLOID_BUCKET.get());
+                output.accept(ModItems.BLOODY_ENDER_PEARL.get());
+                output.accept(ModItems.ENDER_EGG.get());
             }).build());
 
 
-    // The constructor for the mod class is the first code that is run when your mod is loaded.
-    // FML will recognize some parameter types like IEventBus or ModContainer and pass them in automatically.
     public Createscuder(IEventBus modEventBus) {
-        // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);
-
         ModFluidTypes.FLUID_TYPES.register(modEventBus);
-
         ModFluids.FLUIDS.register(modEventBus);
-        // Register the Deferred Register to the mod event bus so blocks get registered
         BLOCKS.register(modEventBus);
-        // Register the Deferred Register to the mod event bus so items get registered
         ITEMS.register(modEventBus);
-
         ModEntities.ENTITY_TYPES.register(modEventBus);
-        // Register the Deferred Register to the mod event bus so tabs get registered
         CREATIVE_MODE_TABS.register(modEventBus);
-
-        // Register ourselves for server and other game events we are interested in.
-        // Note that this is necessary if and only if we want *this* class (Createscuder) to respond directly to events.
-        // Do not add this line if there are no @SubscribeEvent-annotated functions in this class, like onServerStarting() below.
         NeoForge.EVENT_BUS.register(this);
 
 
