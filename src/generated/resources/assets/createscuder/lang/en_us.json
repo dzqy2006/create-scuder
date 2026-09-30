@@ -1,6 +1,12 @@
 {
   "block.createscuder.ender_colloid": "Ender Colloid",
+  "block.createscuder.fan_cudering_catalyst": "Fan Cudering Catalyst",
+  "block.createscuder.fan_scuding_catalyst": "Fan Scuding Catalyst",
   "block.createscuder.sculk_colloid": "Sculk Dragon Breath",
+  "createscuder.recipe.cudering": "Bulk Cudering",
+  "createscuder.recipe.cudering.fan": "Encased Fan (Bulk Cudering)",
+  "createscuder.recipe.scuding": "Bulk Scuding",
+  "createscuder.recipe.scuding.fan": "Encased Fan (Bulk Scuding)",
   "fluid.createscuder.ender_colloid": "Ender Colloid",
   "fluid.createscuder.sculk_colloid": "Sculk Colloid Bucket",
   "item.createscuder.baked_ender_pearl": "Baked Ender Pearl",

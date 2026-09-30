@@ -1,6 +1,6 @@
 {
   "required": true,
-  "package": "com.onedone666.createscuder",
+  "package": "com.onedone666.createscuder.mixin",
   "compatibilityLevel": "JAVA_21",
   "mixins": [],
   "injectors": {

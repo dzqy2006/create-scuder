@@ -140,6 +140,10 @@ dependencies {
     implementation "curse.maven:create-dragons-plus-${create_dragons_plus_project_id}:${create_dragons_plus_file_id}"
     implementation "curse.maven:curios-api-${curios_api_project_id}:${curios_api_file_id}"
 
+    // Create: Connected（可选前置：编译期可见以便调用其 API，运行期由玩家决定是否安装）
+    compileOnly "curse.maven:create-connected-${create_connected_project_id}:${create_connected_file_id}"
+    runtimeOnly "curse.maven:create-connected-${create_connected_project_id}:${create_connected_file_id}"
+
     compileOnly "curse.maven:jei-${jei_project_id}:${jei_file_id}"
     runtimeOnly "curse.maven:jei-${jei_project_id}:${jei_file_id}"
  //   compileOnly "curse.maven:iris-${iris_shader_project_id}:${iris_shader_file_id}"

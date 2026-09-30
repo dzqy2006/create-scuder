@@ -22,6 +22,14 @@ public class ModLangZhCn extends LanguageProvider {
         add(ModBlocks.ENDER_COLLOID.get(), "末影胶体");
         add(ModItems.ENDER_EGG.get(),"末影之卵");
         add(ModItems.BLOODY_ENDER_PEARL.get(),"血腥珍珠");
+        // 鼓风机处理（JEI 分类标题 + 触媒名称）
+        add("createscuder.recipe.scuding", "幽匿胶体处理");
+        add("createscuder.recipe.scuding.fan", "鼓风机（幽匿胶体处理）");
+        add("createscuder.recipe.cudering", "末影胶体处理");
+        add("createscuder.recipe.cudering.fan", "鼓风机（末影胶体处理）");
+        // Create: Connected 联动方块（用字符串键：CC 缺失时方块不存在，不能走 Block 重载）
+        add("block.createscuder.fan_scuding_catalyst", "幽匿鼓风机触媒");
+        add("block.createscuder.fan_cudering_catalyst", "末影鼓风机触媒");
 
     }
 }

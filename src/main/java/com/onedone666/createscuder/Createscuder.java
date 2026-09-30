@@ -1,7 +1,10 @@
 package com.onedone666.createscuder;
 
+import com.onedone666.createscuder.compat.connected.ConnectedCatalystBlocks;
+import com.onedone666.createscuder.fan.ModFanProcessingTypes;
 import com.onedone666.createscuder.fluid.ModFluidTypes;
 import com.onedone666.createscuder.fluid.ModFluids;
+import com.onedone666.createscuder.recipe.ModRecipes;
 import org.slf4j.Logger;
 import com.mojang.logging.LogUtils;
 import net.minecraft.core.registries.Registries;
@@ -10,6 +13,7 @@ import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.bus.api.SubscribeEvent;
+import net.neoforged.fml.ModList;
 import net.neoforged.fml.common.Mod;
 import net.neoforged.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.neoforged.neoforge.common.NeoForge;
@@ -39,6 +43,10 @@ public class Createscuder {
                 output.accept(ModItems.ENDER_COLLOID_BUCKET.get());
                 output.accept(ModItems.BLOODY_ENDER_PEARL.get());
                 output.accept(ModItems.ENDER_EGG.get());
+                // 仅在 Create: Connected 存在时才有这两个鼓风机触媒方块
+                if (ModList.get().isLoaded("create_connected")) {
+                    ConnectedCatalystBlocks.addToCreativeTab(output);
+                }
             }).build());
 
 
@@ -49,6 +57,12 @@ public class Createscuder {
         BLOCKS.register(modEventBus);
         ITEMS.register(modEventBus);
         ModEntities.ENTITY_TYPES.register(modEventBus);
+        ModRecipes.register(modEventBus);
+        ModFanProcessingTypes.register(modEventBus);
+        // Create: Connected 可选联动 —— 它不在时，compat.connected 包不会被类加载
+        if (ModList.get().isLoaded("create_connected")) {
+            ConnectedCatalystBlocks.init(modEventBus);
+        }
         CREATIVE_MODE_TABS.register(modEventBus);
         NeoForge.EVENT_BUS.register(this);
 

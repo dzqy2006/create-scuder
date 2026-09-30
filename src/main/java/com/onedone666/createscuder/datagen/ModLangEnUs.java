@@ -22,6 +22,14 @@ public class ModLangEnUs extends LanguageProvider {
         add(ModBlocks.ENDER_COLLOID.get(), "Ender Colloid");
         add(ModItems.BLOODY_ENDER_PEARL.get(),"Bloody Ender Pearl");
         add(ModItems.ENDER_EGG.get(),"Ender Egg");
+        // 鼓风机处理（JEI 分类标题 + 触媒名称）
+        add("createscuder.recipe.scuding", "Bulk Scuding");
+        add("createscuder.recipe.scuding.fan", "Encased Fan (Bulk Scuding)");
+        add("createscuder.recipe.cudering", "Bulk Cudering");
+        add("createscuder.recipe.cudering.fan", "Encased Fan (Bulk Cudering)");
+        // Create: Connected 联动方块（用字符串键：CC 缺失时方块不存在，不能走 Block 重载）
+        add("block.createscuder.fan_scuding_catalyst", "Fan Scuding Catalyst");
+        add("block.createscuder.fan_cudering_catalyst", "Fan Cudering Catalyst");
 
     }
 }

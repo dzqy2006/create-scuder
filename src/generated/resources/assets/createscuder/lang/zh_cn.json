@@ -1,6 +1,12 @@
 {
   "block.createscuder.ender_colloid": "末影胶体",
+  "block.createscuder.fan_cudering_catalyst": "末影鼓风机触媒",
+  "block.createscuder.fan_scuding_catalyst": "幽匿鼓风机触媒",
   "block.createscuder.sculk_colloid": "幽匿胶体",
+  "createscuder.recipe.cudering": "末影胶体处理",
+  "createscuder.recipe.cudering.fan": "鼓风机（末影胶体处理）",
+  "createscuder.recipe.scuding": "幽匿胶体处理",
+  "createscuder.recipe.scuding.fan": "鼓风机（幽匿胶体处理）",
   "fluid.createscuder.ender_colloid": "末影胶体",
   "fluid.createscuder.sculk_colloid": "幽匿胶体",
   "item.createscuder.baked_ender_pearl": "烘干末影珍珠",
