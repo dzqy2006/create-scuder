@@ -30,6 +30,11 @@ public class ModLangZhCn extends LanguageProvider {
         // Create: Connected 联动方块（用字符串键：CC 缺失时方块不存在，不能走 Block 重载）
         add("block.createscuder.fan_scuding_catalyst", "幽匿鼓风机触媒");
         add("block.createscuder.fan_cudering_catalyst", "末影鼓风机触媒");
+        add("block.createscuder.empty_fan_catalyst", "空鼓风机触媒");
+        // 沉降胶体方块
+        add(ModBlocks.DEPOSITED_SCUDER_COLLOID.get(), "幽末沉降胶体");
+        add(ModBlocks.DEPOSITED_SCULK_COLLOID.get(), "沉降幽匿胶体");
+        add(ModBlocks.DEPOSITED_ENDER_COLLOID.get(), "末影沉降胶体");
 
     }
 }

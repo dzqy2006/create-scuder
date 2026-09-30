@@ -1,4 +1,8 @@
 {
+  "block.createscuder.deposited_ender_colloid": "Deposited Ender Colloid",
+  "block.createscuder.deposited_scuder_colloid": "Deposited Scuder Colloid",
+  "block.createscuder.deposited_sculk_colloid": "Deposited Sculk Colloid",
+  "block.createscuder.empty_fan_catalyst": "Empty Fan Catalyst",
   "block.createscuder.ender_colloid": "Ender Colloid",
   "block.createscuder.fan_cudering_catalyst": "Fan Cudering Catalyst",
   "block.createscuder.fan_scuding_catalyst": "Fan Scuding Catalyst",

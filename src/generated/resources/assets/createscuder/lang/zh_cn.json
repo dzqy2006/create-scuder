@@ -1,4 +1,8 @@
 {
+  "block.createscuder.deposited_ender_colloid": "末影沉降胶体",
+  "block.createscuder.deposited_scuder_colloid": "幽末沉降胶体",
+  "block.createscuder.deposited_sculk_colloid": "沉降幽匿胶体",
+  "block.createscuder.empty_fan_catalyst": "空鼓风机触媒",
   "block.createscuder.ender_colloid": "末影胶体",
   "block.createscuder.fan_cudering_catalyst": "末影鼓风机触媒",
   "block.createscuder.fan_scuding_catalyst": "幽匿鼓风机触媒",

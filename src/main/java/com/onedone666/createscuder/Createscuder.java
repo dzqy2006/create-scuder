@@ -43,6 +43,9 @@ public class Createscuder {
                 output.accept(ModItems.ENDER_COLLOID_BUCKET.get());
                 output.accept(ModItems.BLOODY_ENDER_PEARL.get());
                 output.accept(ModItems.ENDER_EGG.get());
+                output.accept(ModItems.DEPOSITED_SCUDER_COLLOID.get());
+                output.accept(ModItems.DEPOSITED_SCULK_COLLOID.get());
+                output.accept(ModItems.DEPOSITED_ENDER_COLLOID.get());
                 // 仅在 Create: Connected 存在时才有这两个鼓风机触媒方块
                 if (ModList.get().isLoaded("create_connected")) {
                     ConnectedCatalystBlocks.addToCreativeTab(output);

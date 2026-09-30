@@ -30,6 +30,11 @@ public class ModLangEnUs extends LanguageProvider {
         // Create: Connected 联动方块（用字符串键：CC 缺失时方块不存在，不能走 Block 重载）
         add("block.createscuder.fan_scuding_catalyst", "Fan Scuding Catalyst");
         add("block.createscuder.fan_cudering_catalyst", "Fan Cudering Catalyst");
+        add("block.createscuder.empty_fan_catalyst", "Empty Fan Catalyst");
+        // 沉降胶体方块
+        add(ModBlocks.DEPOSITED_SCUDER_COLLOID.get(), "Deposited Scuder Colloid");
+        add(ModBlocks.DEPOSITED_SCULK_COLLOID.get(), "Deposited Sculk Colloid");
+        add(ModBlocks.DEPOSITED_ENDER_COLLOID.get(), "Deposited Ender Colloid");
 
     }
 }
